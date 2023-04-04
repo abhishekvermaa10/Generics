@@ -1,0 +1,5 @@
+Demo0 - Without Generics - Multiple Record classes
+Demo1 - Without Generics - Single Object Record Class
+Demo2 - Generic Class
+Demo3 - Generic Return Type
+Demo4 - Generic Method
