@@ -10,27 +10,31 @@ import com.scaleupindia.record.ObjectRecord;
  */
 public class Demo {
 	public static void main(String[] args) {
+		Book book1 = new Book(1, "Java Basics");
+		Book book2 = new Book(2, "Java Advanced");
+		Laptop laptop1 = new Laptop(100, "HP");
+		Laptop laptop2 = new Laptop(200, "Dell");
+		
 		ObjectRecord bookRecord = new ObjectRecord();
-		bookRecord.addItem(new Book(1, "Java Basics"));
-		bookRecord.addItem(new Book(2, "Java Advanced"));
+		bookRecord.addItem(book1);
+		bookRecord.addItem(book2);
 
 		Book book = (Book) bookRecord.getItem(0);
 		System.out.println(book);
 
 		ObjectRecord laptopRecord = new ObjectRecord();
-		laptopRecord.addItem(new Laptop(100, "HP"));
-		laptopRecord.addItem(new Laptop(200, "Dell"));
-
+		laptopRecord.addItem(laptop1);
+		laptopRecord.addItem(laptop2);
+		
 		Laptop laptop = (Laptop) laptopRecord.getItem(0);
 		System.out.println(laptop);
-
+		
 		ObjectRecord objectRecord = new ObjectRecord();
-		objectRecord.addItem(new Laptop(100, "HP"));
-		objectRecord.addItem(new Book(2, "Java Advanced"));
+		objectRecord.addItem(book2);
+		objectRecord.addItem(laptop2);
 		objectRecord.addItem("Java");
-		objectRecord.addItem(2);
-
-		Laptop laptop2 = (Laptop) objectRecord.getItem(1);
-		System.out.println(laptop2);
+		
+		book = (Book) objectRecord.getItem(1);
+		System.out.println(book);
 	}
 }

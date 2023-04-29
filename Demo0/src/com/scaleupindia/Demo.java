@@ -11,16 +11,21 @@ import com.scaleupindia.record.LaptopRecord;
  */
 public class Demo {
 	public static void main(String[] args) {
+		Book book1 = new Book(1, "Java Basics");
+		Book book2 = new Book(2, "Java Advanced");
+		Laptop laptop1 = new Laptop(100, "HP");
+		Laptop laptop2 = new Laptop(200, "Dell");
+
 		BookRecord bookRecord = new BookRecord();
-		bookRecord.addItem(new Book(1, "Java Basics"));
-		bookRecord.addItem(new Book(2, "Java Advanced"));
+		bookRecord.addItem(book1);
+		bookRecord.addItem(book2);
 
 		Book book = bookRecord.getItem(0);
 		System.out.println(book);
 
 		LaptopRecord laptopRecord = new LaptopRecord();
-		laptopRecord.addItem(new Laptop(100, "HP"));
-		laptopRecord.addItem(new Laptop(200, "Dell"));
+		laptopRecord.addItem(laptop1);
+		laptopRecord.addItem(laptop2);
 
 		Laptop laptop = laptopRecord.getItem(0);
 		System.out.println(laptop);

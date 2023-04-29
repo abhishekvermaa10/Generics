@@ -1,5 +1,7 @@
 package com.scaleupindia.record;
 
+import java.util.Objects;
+
 /**
  * @author abhishekvermaa10
  *
@@ -7,8 +9,17 @@ package com.scaleupindia.record;
 public class CommonRecord<E> {
 	private E[] items;
 
+	public CommonRecord() {
+		this.items = (E[]) new Object[10];
+	}
+
 	public void addItem(E item) {
-		// logic to add item
+		for (int i = 0; i < items.length; i++) {
+			if (Objects.isNull(items[i])) {
+				items[i] = item;
+				break;
+			}
+		}
 	}
 
 	public E getItem(int index) {
