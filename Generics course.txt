@@ -1,5 +1,0 @@
-Demo0 - Understanding problems with multiple Record classes
-Demo1 - Understanding problems with single ObjectRecord class
-Demo2 - Implementing Generic class
-Demo3 - Implementing Generic method
-Demo4 - Understanding Wild Cards in Generics
