@@ -28,7 +28,8 @@
     Before diving into Concurrency, ensure you're comfortable with the following concepts:
 <ul>
     <li>Java Basics</li>
-    <li>Exception Handling</li>
+    <li><a href="https://youtu.be/N6JikpffwO4"
+        target="_blank">Exception Handling</a></li>
 </ul>
 You can learn these topics from my YouTube channel through dedicated playlists.
 </p>
